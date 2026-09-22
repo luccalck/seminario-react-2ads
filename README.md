@@ -9,7 +9,7 @@ Investigar React, comparar seus cenários de uso e demonstrar na prática compon
 ## Apresentações
 
 - [Abrir os slides em HTML](https://luccalck.github.io/seminario-react-2ads/#/slides)
-- [Baixar o PowerPoint](ENTREGAVEIS/Seminario_React_2ADS.pptx)
+- [Baixar o PowerPoint editável com 15 slides](ENTREGAVEIS/Seminario_React_2ADS.pptx)
 
 ## Integrantes
 

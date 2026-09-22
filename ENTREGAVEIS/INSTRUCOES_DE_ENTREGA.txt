@@ -1,7 +1,7 @@
 ENTREGA DO SEMINÁRIO REACT — 2º ADS
 
 1. Seminario_React_2ADS.pptx
-   PowerPoint com exatamente 15 slides e todos os tópicos do roteiro.
+   PowerPoint editável com exatamente 15 slides e todos os tópicos do roteiro.
 
 2. Projeto_ReactLab.zip
    Código-fonte do projeto React, sem node_modules, dist ou arquivos temporários.
