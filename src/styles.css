@@ -77,6 +77,8 @@ h1,h2,h3,p { margin-top:0; }
 .team-list { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:#31a9c4; }
 .team-list span { background:var(--cyan); padding:1.5rem; display:flex; gap:1rem; align-items:center; }
 .team-list b { font:500 .72rem DM Mono,monospace; border:1px solid #14849b; padding:.35rem; }
+.cover-members { margin-top:1.2rem; display:grid; grid-template-columns:1fr 1fr; gap:.36rem 1rem; color:#9caaad; font:500 .66rem/1.25 DM Mono,monospace; }
+.cover-members span { border-left:2px solid var(--cyan); padding-left:.55rem; }
 .final-actions { margin-top:2rem; }
 .team .actions a { border-color:#111719; color:#111719; }
 .team .actions .primary { background:#111719; color:#61dafb; }

@@ -5,6 +5,17 @@ export const members = [
   'Davi Souza', 'Lucca Castilho', 'Pedro de Lima', 'Renan Ramos',
 ];
 
+export const speakerAssignments = [
+  { member: 'Lucca Castilho', slides: '01–02' },
+  { member: 'João Gabriel', slides: '03–04' },
+  { member: 'João Pedro Fonseca', slides: '05–06' },
+  { member: 'Lucas Souza', slides: '07–08' },
+  { member: 'Miguel Oliveira', slides: '09–10' },
+  { member: 'Davi Souza', slides: '11–12' },
+  { member: 'Pedro de Lima', slides: '13–14' },
+  { member: 'Renan Ramos', slides: '15' },
+] as const;
+
 export const references = [
   ['React — Quick Start', 'https://react.dev/learn'],
   ['React — Versions', 'https://react.dev/versions'],
@@ -14,7 +25,7 @@ export const references = [
   ['Vite — Getting Started', 'https://vite.dev/guide/'],
   ['React Hooks', 'https://react.dev/reference/react/hooks'],
   ['CVE-2025-55182', 'https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components'],
-  ['Meta — React Foundation', 'https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/'],
+  ['React Foundation — página oficial em português', 'https://pt-br.react.dev/blog/2026/02/24/the-react-foundation'],
   ['GitHub Pages', 'https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site'],
   ['React Router — HashRouter', 'https://reactrouter.com/api/declarative-routers/HashRouter'],
 ] as const;
@@ -30,7 +41,7 @@ export const slides: Slide[] = [
   { kicker: '07 · ESTRUTURA', title: 'Responsabilidades separadas por arquivo', statement: 'Entrada, rotas, páginas, estado e componentes permanecem fáceis de localizar.', bullets: ['src/main.tsx · raiz React', 'src/App.tsx · rotas e layout', 'src/pages · telas', 'src/components · peças reutilizáveis', 'src/context · estado compartilhado', 'src/data · conteúdo e fontes'] },
   { kicker: '08 · RECURSOS', title: 'Componentes pequenos, estado previsível', statement: 'Props levam dados; eventos disparam ações; effects sincronizam sistemas externos.', bullets: ['Componentes + props', 'JSX condicional', 'useReducer', 'useEffect', 'Context', 'Listas com key'], code: 'const [tasks, dispatch] = useReducer(reducer, initial);\n\nuseEffect(() => {\n  localStorage.setItem("tasks", JSON.stringify(tasks));\n}, [tasks]);', source: 'react.dev/reference/react/hooks' },
   { kicker: '09 · ANÁLISE', title: 'Produtividade com escolhas arquiteturais', statement: 'React organiza interfaces complexas, mas não entrega uma arquitetura completa sozinho.', bullets: ['+ Reuso e composição', '+ Ecossistema amplo', '+ Adoção gradual', '− Muitas decisões externas', '− Estado e effects exigem disciplina', '− Desempenho deve ser medido'] },
-  { kicker: '10 · MERCADO', title: 'Um ecossistema em escala global', statement: 'A Meta relata uso em mais de 50 milhões de sites e produtos.', bullets: ['Facebook.com', 'Microsoft', 'Shopify', 'Bloomberg', 'Discord', 'Coinbase'], source: 'engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation' },
+  { kicker: '10 · MERCADO', title: 'Um ecossistema mantido por várias empresas', statement: 'A React Foundation reúne oito membros fundadores e mantém a governança técnica independente.', bullets: ['Amazon', 'Callstack', 'Expo', 'Huawei', 'Meta', 'Microsoft', 'Software Mansion', 'Vercel'], source: 'pt-br.react.dev/blog/2026/02/24/the-react-foundation' },
   { kicker: '11 · SEGURANÇA', title: 'CVE-2025-55182 exige atualização imediata', statement: 'Execução remota não autenticada em React Server Components. CVSS 10.0.', bullets: ['Afetadas: 19.0.0, 19.1.0, 19.1.1 e 19.2.0', 'Pacotes react-server-dom-*', 'Correções iniciais: 19.0.1, 19.1.2 e 19.2.1', 'Atualizar para a última versão suportada e refazer o build', 'Este Vite client-side, sem RSC, não é afetado diretamente'], source: 'react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components' },
   { kicker: '12 · PROJETO', title: 'ReactLab une conteúdo e prática', statement: 'A mesma aplicação publica o seminário e demonstra estado, efeitos e rotas.', bullets: ['Página pública do seminário', 'Deck HTML com teclado', 'Quadro de tarefas', 'Persistência em localStorage', 'HashRouter no GitHub Pages', 'Layout responsivo'] },
   { kicker: '13 · DEMONSTRAÇÃO', title: 'Da instalação à interação em 3 minutos', statement: 'O público vê o código provocar uma mudança real e persistente.', bullets: ['npm ci + npm run dev', 'Criar e concluir tarefa', 'Filtrar resultados', 'Recarregar e confirmar persistência', 'Abrir componente e reducer', 'npm run build'] },

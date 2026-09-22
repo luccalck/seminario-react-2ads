@@ -125,7 +125,7 @@ Fonte: [React — Critical Security Vulnerability in React Server Components](ht
 - [Build a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch)
 - [Vite — Getting Started](https://vite.dev/guide/)
 - [React Hooks](https://react.dev/reference/react/hooks)
-- [Meta — Introducing the React Foundation](https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/)
+- [React Foundation — página oficial em português](https://pt-br.react.dev/blog/2026/02/24/the-react-foundation)
 - [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [React Router — HashRouter](https://reactrouter.com/api/declarative-routers/HashRouter)
 

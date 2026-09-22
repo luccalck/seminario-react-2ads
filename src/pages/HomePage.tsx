@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ReactOrbit } from '../components/ReactOrbit';
 import { SectionHeading } from '../components/SectionHeading';
-import { members, slides } from '../data/presentation';
+import { slides, speakerAssignments } from '../data/presentation';
 
 export function HomePage() {
   return <>
@@ -38,7 +38,7 @@ export function HomePage() {
       <div className="essentials-grid">
         <article><span>ESTRUTURA</span><h3>Arquivos com função clara</h3><p><code>main.tsx</code> cria a raiz; <code>App.tsx</code> organiza rotas; páginas compõem telas; componentes reutilizam interface; Context e reducer coordenam estado.</p></article>
         <article><span>RECURSOS</span><h3>React usado de verdade</h3><p>Componentes, props, JSX condicional, listas com <code>key</code>, Context, <code>useReducer</code>, <code>useEffect</code> e HashRouter.</p></article>
-        <article><span>ADOÇÃO E LIMITES</span><h3>Escala não elimina escolhas</h3><p>Meta, Microsoft, Shopify, Bloomberg, Discord e Coinbase participam do ecossistema. React amplia reuso, mas não fornece sozinho backend, dados ou arquitetura full stack.</p></article>
+        <article><span>ADOÇÃO E LIMITES</span><h3>Escala não elimina escolhas</h3><p>A React Foundation reúne Amazon, Callstack, Expo, Huawei, Meta, Microsoft, Software Mansion e Vercel. React amplia reuso, mas não fornece sozinho backend, dados ou arquitetura full stack.</p></article>
       </div>
     </section>
     <section className="section dark compact-section">
@@ -52,7 +52,7 @@ export function HomePage() {
     </section>
     <section className="section team">
       <SectionHeading eyebrow="EQUIPE" title="Participação dividida por conteúdo" />
-      <div className="team-list">{members.map((member, index) => <span key={member}><b>{index + 1}</b>{member}</span>)}</div>
+      <div className="team-list">{speakerAssignments.map(({ member, slides: range }) => <span key={member}><b>{range}</b>{member}</span>)}</div>
       <div className="actions final-actions"><Link className="primary" to="/referencias">Consultar fontes oficiais</Link><a className="secondary" href="https://github.com/luccalck/seminario-react-2ads" target="_blank" rel="noreferrer">Abrir repositório</a></div>
     </section>
   </>;
