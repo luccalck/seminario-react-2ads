@@ -46,6 +46,19 @@ h1,h2,h3,p { margin-top:0; }
 .split li { margin:.9rem 0; line-height:1.5; }
 .route-map { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
 .route-map span { font:500 1rem DM Mono,monospace; padding:1.3rem; border-bottom:2px solid var(--cyan); background:#111719; }
+.timeline-web { display:grid; grid-template-columns:repeat(6,1fr); border-top:2px solid #344247; }
+.timeline-web span { position:relative; padding-top:1.4rem; }
+.timeline-web span::before { content:''; width:12px; height:12px; border-radius:50%; background:var(--cyan); position:absolute; top:-7px; left:0; }
+.timeline-web b,.timeline-web small { display:block; }
+.timeline-web b { font-size:1.35rem; color:var(--cyan); }
+.timeline-web small { margin-top:.35rem; color:#91a0a4; }
+.install-web pre { margin:0; max-width:760px; padding:2rem; background:#111719; color:#b8edf8; border-left:4px solid #10798e; font:400 .95rem/1.75 DM Mono,monospace; overflow:auto; }
+.security-web { display:grid; grid-template-columns:.32fr 1fr; align-items:center; gap:4rem; background:#e5ddd4; color:#172124; }
+.security-web>div:first-child { width:220px; aspect-ratio:1; background:#c93d3d; color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.risk-score { font-size:4rem; font-weight:800; letter-spacing:-.06em; }
+.security-web small { letter-spacing:.15em; font-weight:700; }
+.security-web .section-heading { margin:0; }
+.security-web .section-heading p { color:#657174; }
 .topic-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; padding:0; background:#c9cfca; border:1px solid #c9cfca; list-style:none; }
 .topic-grid li { background:var(--paper); padding:1.4rem; min-height:100px; display:flex; flex-direction:column; justify-content:space-between; }
 .topic-grid span { color:#10798e; font:500 .75rem DM Mono,monospace; }
@@ -55,6 +68,9 @@ h1,h2,h3,p { margin-top:0; }
 .team-list { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:#31a9c4; }
 .team-list span { background:var(--cyan); padding:1.5rem; display:flex; gap:1rem; align-items:center; }
 .team-list b { font:500 .72rem DM Mono,monospace; border:1px solid #14849b; padding:.35rem; }
+.final-actions { margin-top:2rem; }
+.team .actions a { border-color:#111719; color:#111719; }
+.team .actions .primary { background:#111719; color:#61dafb; }
 footer { padding:2.5rem 5vw; border-top:1px solid #2a3538; display:flex; justify-content:space-between; gap:1rem; color:#859397; font-size:.78rem; }
 footer p { margin:0; }
 .deck-shell { min-height:calc(100vh - 72px); padding:1.5rem 3vw 2rem; background:#0c1113; }
@@ -105,5 +121,5 @@ footer p { margin:0; }
 .reference-list a:hover strong { color:#10798e; }
 .reference-list span { font:500 .7rem DM Mono,monospace; color:#10798e; }
 .reference-list small { display:block; color:#738082; margin-top:.25rem; overflow-wrap:anywhere; }
-@media (max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;min-height:auto}.hero .react-orbit{width:65vw;margin:4rem auto 0}.metric-row,.team-list,.route-map{grid-template-columns:1fr 1fr}.topic-grid{grid-template-columns:1fr 1fr}.split,.demo-page{grid-template-columns:1fr}.web-slide{aspect-ratio:auto;min-height:70vh;padding:1.5rem}.slide-body{grid-template-columns:1fr}.slide-visual,.web-slide .react-orbit{display:none}.slide-copy ul{grid-template-columns:1fr}.slide-copy h1{font-size:2.6rem}footer{flex-direction:column}.section{padding:5rem 6vw}}
+@media (max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;min-height:auto}.hero .react-orbit{width:65vw;margin:4rem auto 0}.metric-row,.team-list,.route-map{grid-template-columns:1fr 1fr}.timeline-web{grid-template-columns:repeat(3,1fr);gap:2rem 0}.topic-grid{grid-template-columns:1fr 1fr}.split,.demo-page,.security-web{grid-template-columns:1fr}.security-web>div:first-child{width:150px}.web-slide{aspect-ratio:auto;min-height:70vh;padding:1.5rem}.slide-body{grid-template-columns:1fr}.slide-visual,.web-slide .react-orbit{display:none}.slide-copy ul{grid-template-columns:1fr}.slide-copy h1{font-size:2.6rem}footer{flex-direction:column}.section{padding:5rem 6vw}}
 @media (max-width:480px){.metric-row,.team-list,.route-map,.topic-grid{grid-template-columns:1fr}.actions{flex-direction:column}.hero h1{font-size:3.5rem}.task-app{box-shadow:8px 8px 0 #61dafb}.demo-page{padding:4rem 6vw}}

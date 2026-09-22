@@ -21,6 +21,18 @@ export function HomePage() {
       <SectionHeading eyebrow="DECISÃO TÉCNICA" title="Quando React é uma boa escolha" />
       <div className="split"><div><h3>Recomendamos</h3><ul><li>Interfaces com estados frequentes</li><li>SPAs, painéis e sistemas internos</li><li>Design systems e componentes reutilizáveis</li><li>Evolução gradual de uma interface existente</li></ul></div><div><h3>Outra solução pode ser melhor</h3><ul><li>HTML/CSS para páginas simples e estáticas</li><li>Framework React em projetos full stack</li><li>React Native em aplicações móveis</li><li>Soluções mais opinativas para equipes que querem menos decisões</li></ul></div></div>
     </section>
+    <section className="section dark">
+      <SectionHeading eyebrow="EVOLUÇÃO" title="Treze anos de mudanças arquiteturais" text="Do lançamento aberto à fundação independente, os marcos mantiveram o foco em componentes e melhoraram a forma de renderizar e compartilhar lógica." />
+      <div className="timeline-web">{[['2013','lançamento'],['2017','Fiber'],['2019','Hooks'],['2022','React 18'],['2024','React 19'],['2026','Foundation + 19.3']].map(([year,label]) => <span key={year}><b>{year}</b><small>{label}</small></span>)}</div>
+    </section>
+    <section className="section light install-web">
+      <SectionHeading eyebrow="INSTALAÇÃO" title="Um projeto React atual começa com Vite" text="Node.js 20.19+ ou 22.12+, React 19.3.0, Vite 8.3.0 e React Router 7.18.4." />
+      <pre><code>npm create vite@latest react-seminario -- --template react-ts{`\n`}cd react-seminario{`\n`}npm install{`\n`}npm run dev</code></pre>
+    </section>
+    <section className="section security-web">
+      <div><span className="risk-score">10.0</span><small>CVSS · CRÍTICA</small></div>
+      <SectionHeading eyebrow="SEGURANÇA" title="CVE-2025-55182" text="A falha permite execução remota em versões específicas de React Server Components. A correção exige atualizar os pacotes react-server-dom-* e o framework aplicável. Este projeto Vite somente cliente não usa RSC e não é diretamente afetado." />
+    </section>
     <section className="section dark compact-section">
       <SectionHeading eyebrow="PROJETO DA EQUIPE" title="ReactLab: o conteúdo e a prática no mesmo produto" text="Esta página, os slides HTML e o quadro de tarefas usam React de verdade. A demonstração inclui componentes, rotas, Context, useReducer, useEffect e persistência local." />
       <div className="route-map"><span>#/</span><span>#/slides</span><span>#/demo</span><span>#/referencias</span></div>
@@ -32,6 +44,7 @@ export function HomePage() {
     <section className="section team">
       <SectionHeading eyebrow="EQUIPE" title="Participação dividida por conteúdo" />
       <div className="team-list">{members.map((member, index) => <span key={member}><b>{index + 1}</b>{member}</span>)}</div>
+      <div className="actions final-actions"><Link className="primary" to="/referencias">Consultar fontes oficiais</Link><a className="secondary" href="https://github.com/luccalck/seminario-react-2ads" target="_blank" rel="noreferrer">Abrir repositório</a></div>
     </section>
   </>;
 }
