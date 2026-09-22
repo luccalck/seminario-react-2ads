@@ -1,0 +1,15 @@
+ENTREGA DO SEMINÁRIO REACT — 2º ADS
+
+1. Seminario_React_2ADS.pptx
+   PowerPoint com exatamente 15 slides e todos os tópicos do roteiro.
+
+2. Projeto_ReactLab.zip
+   Código-fonte do projeto React, sem node_modules, dist ou arquivos temporários.
+
+3. Repositório público
+   https://github.com/luccalck/seminario-react-2ads
+
+4. GitHub Pages
+   https://luccalck.github.io/seminario-react-2ads/
+
+O projeto também contém o README completo, as evidências reais da aplicação e o roteiro de fala dividido entre os oito integrantes.

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.vite/
+*.log
+.DS_Store
+desktop.ini
+Thumbs.db
+rendered/
+*.tmp
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+ENTREGAVEIS/*.zip
+ENTREGAVEIS/Seminario_React_2ADS/
+ENTREGAVEIS/Seminario_React_2ADS_montage.png
