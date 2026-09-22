@@ -2,6 +2,11 @@
 
 Aplicação Web do seminário de React da turma 2º ADS. O projeto reúne uma página pública com a pesquisa, uma apresentação HTML e um quadro de tarefas funcional para a demonstração prática.
 
+## Apresentações
+
+- [Abrir os slides em HTML](https://luccalck.github.io/seminario-react-2ads/#/slides)
+- [Baixar o PowerPoint](ENTREGAVEIS/Seminario_React_2ADS.pptx)
+
 ## Integrantes
 
 - João Gabriel
