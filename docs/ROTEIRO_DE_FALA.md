@@ -8,7 +8,7 @@ Apresente o tema e a classificação correta: React é uma biblioteca de interfa
 
 ## João Pedro Fonseca — slides 3 e 4
 
-Percorra os marcos de 2013 a 2026 e explique os cenários em que React compensa. Compare com HTML/CSS em páginas simples e com frameworks React em aplicações full stack.
+Explique que Jordan Walke criou React no Facebook, que o projeto foi aberto em 2013 e que hoje pertence à React Foundation, com manutenção da fundação e da comunidade. Percorra Fiber, Hooks, React 18, React 19 e a versão 19.3. Depois compare React com HTML/CSS em páginas simples e com frameworks React em aplicações full stack.
 
 ## Lucas Souza — slides 5 e 6
 
@@ -20,11 +20,11 @@ Execute ou explique os comandos do Vite. Mostre `main.tsx`, `App.tsx`, `pages`, 
 
 ## Davi Souza — slides 9 e 10
 
-Mostre o trecho com `useReducer` e `useEffect`. Compare forças e limitações sem afirmar que React resolve arquitetura, desempenho ou backend sozinho.
+Mostre o trecho com `useReducer` e `useEffect`. Explique que o reducer calcula o próximo estado sem mutação e que o effect sincroniza o estado com `localStorage`. Compare forças e limitações sem afirmar que React resolve arquitetura, desempenho ou backend sozinho.
 
 ## Lucca Castilho — slides 11 e 12
 
-Apresente a adoção e a vulnerabilidade CVE-2025-55182. Deixe claro que o escopo é React Server Components e que a aplicação Vite somente cliente não é afetada diretamente.
+Apresente a adoção e a vulnerabilidade CVE-2025-55182. Cite as versões afetadas, o risco de execução remota e as correções iniciais, recomendando a última versão suportada. Deixe claro que o escopo é React Server Components e que a aplicação Vite somente cliente não é afetada diretamente.
 
 ## Pedro de Lima — slide 13 e início do 14
 

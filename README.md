@@ -2,6 +2,10 @@
 
 Aplicação Web do seminário de React da turma 2º ADS. O projeto reúne uma página pública com a pesquisa, uma apresentação HTML e um quadro de tarefas funcional para a demonstração prática.
 
+## Objetivo
+
+Investigar React, comparar seus cenários de uso e demonstrar na prática componentes, estado, efeitos, rotas e persistência em uma aplicação executada no navegador.
+
 ## Apresentações
 
 - [Abrir os slides em HTML](https://luccalck.github.io/seminario-react-2ads/#/slides)
@@ -27,7 +31,7 @@ Aplicação Web do seminário de React da turma 2º ADS. O projeto reúne uma p�
 
 ## Pré-requisitos
 
-- Node.js 20.19 ou superior, ou 22.12 ou superior
+- Node.js 20.19+ na linha 20 ou 22.12+ nas linhas mais recentes suportadas pelo Vite; prefira uma versão LTS compatível
 - npm
 - Navegador atualizado
 
@@ -62,7 +66,6 @@ src/
 ├─ main.tsx        entrada da aplicação React
 └─ styles.css      identidade visual e responsividade
 .github/workflows/ deploy automático no GitHub Pages
-tools/             gerador do PowerPoint
 ```
 
 ## Funcionalidades
@@ -91,7 +94,7 @@ O fluxo do quadro é direto: o componente envia uma ação, o reducer calcula o 
 
 A vulnerabilidade permite execução remota de código sem autenticação em aplicações com React Server Components. Ela afeta os pacotes `react-server-dom-webpack`, `react-server-dom-parcel` e `react-server-dom-turbopack` nas versões 19.0.0, 19.1.0, 19.1.1 e 19.2.0. A correção inicial foi publicada nas versões 19.0.1, 19.1.2 e 19.2.1.
 
-A mitigação é atualizar imediatamente React, os pacotes `react-server-dom-*` e o framework ou bundler que habilita RSC, executar auditoria e reconstruir a aplicação. Este projeto usa Vite somente no cliente e não instala React Server Components, portanto não é diretamente afetado.
+A mitigação é atualizar imediatamente React, os pacotes `react-server-dom-*` e o framework ou bundler que habilita RSC, executar auditoria e reconstruir a aplicação. As versões 19.0.1, 19.1.2 e 19.2.1 foram as correções iniciais; a orientação atual é usar a última versão suportada. Este projeto usa React 19.3.0 com Vite somente no cliente e não instala React Server Components, portanto não é diretamente afetado.
 
 Fonte: [React — Critical Security Vulnerability in React Server Components](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components).
 

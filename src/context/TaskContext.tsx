@@ -8,7 +8,14 @@ const TaskContext = createContext<TaskContextValue | null>(null);
 function readStoredTasks() {
   try {
     const stored = localStorage.getItem('reactlab.tasks');
-    return stored ? JSON.parse(stored) as Task[] : initialTasks;
+    if (!stored) return initialTasks;
+    const parsed: unknown = JSON.parse(stored);
+    if (!Array.isArray(parsed) || !parsed.every((task) =>
+      typeof task === 'object' && task !== null &&
+      typeof task.id === 'string' && typeof task.title === 'string' && typeof task.done === 'boolean')) {
+      return initialTasks;
+    }
+    return parsed as Task[];
   } catch { return initialTasks; }
 }
 
