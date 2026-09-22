@@ -1,19 +1,19 @@
 import type { Slide } from '../types';
 
 export const members = [
-  'João Gabriel', 'João Pedro Fonseca', 'Lucas Souza', 'Miguel Oliveira',
-  'Davi Souza', 'Lucca Castilho', 'Pedro de Lima', 'Renan Ramos',
+  'Lucca Castilho', 'João Gabriel', 'Miguel Oliveira', 'Lucas Souza',
+  'Davi Souza', 'João Pedro Fonseca', 'Renan Ramos', 'Pedro de Lima',
 ];
 
 export const speakerAssignments = [
-  { member: 'Lucca Castilho', slides: '01–02' },
-  { member: 'João Gabriel', slides: '03–04' },
-  { member: 'João Pedro Fonseca', slides: '05–06' },
-  { member: 'Lucas Souza', slides: '07–08' },
-  { member: 'Miguel Oliveira', slides: '09–10' },
-  { member: 'Davi Souza', slides: '11–12' },
-  { member: 'Pedro de Lima', slides: '13–14' },
-  { member: 'Renan Ramos', slides: '15' },
+  { member: 'João Gabriel', slides: '01–03' },
+  { member: 'Lucca Castilho', slides: '04–05' },
+  { member: 'Miguel Oliveira', slides: '06–07' },
+  { member: 'Lucas Souza', slides: '08–09' },
+  { member: 'Davi Souza', slides: '10–11' },
+  { member: 'João Pedro Fonseca', slides: '12–13' },
+  { member: 'Renan Ramos', slides: '14' },
+  { member: 'Pedro de Lima', slides: '15' },
 ] as const;
 
 export const references = [
@@ -44,6 +44,6 @@ export const slides: Slide[] = [
   { kicker: '10 · MERCADO', title: 'Um ecossistema mantido por várias empresas', statement: 'A React Foundation reúne oito membros fundadores e mantém a governança técnica independente.', bullets: ['Amazon', 'Callstack', 'Expo', 'Huawei', 'Meta', 'Microsoft', 'Software Mansion', 'Vercel'], source: 'pt-br.react.dev/blog/2026/02/24/the-react-foundation' },
   { kicker: '11 · SEGURANÇA', title: 'CVE-2025-55182 exige atualização imediata', statement: 'Execução remota não autenticada em React Server Components. CVSS 10.0.', bullets: ['Afetadas: 19.0.0, 19.1.0, 19.1.1 e 19.2.0', 'Pacotes react-server-dom-*', 'Correções iniciais: 19.0.1, 19.1.2 e 19.2.1', 'Atualizar para a última versão suportada e refazer o build', 'Este Vite client-side, sem RSC, não é afetado diretamente'], source: 'react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components' },
   { kicker: '12 · PROJETO', title: 'ReactLab une conteúdo e prática', statement: 'A mesma aplicação publica o seminário e demonstra estado, efeitos e rotas.', bullets: ['Página pública do seminário', 'Deck HTML com teclado', 'Quadro de tarefas', 'Persistência em localStorage', 'HashRouter no GitHub Pages', 'Layout responsivo'] },
-  { kicker: '13 · DEMONSTRAÇÃO', title: 'Da instalação à interação em 3 minutos', statement: 'O público vê o código provocar uma mudança real e persistente.', bullets: ['npm ci + npm run dev', 'Criar e concluir tarefa', 'Filtrar resultados', 'Recarregar e confirmar persistência', 'Abrir componente e reducer', 'npm run build'] },
+  { kicker: '13 · DEMONSTRAÇÃO', title: 'Da instalação à interação em 3 minutos', statement: 'Terminal, interação funcional e recursos React aparecem na mesma sequência.', bullets: ['npm ci + npm run dev', 'Criar e concluir uma tarefa', 'Filtrar e remover tarefas', 'Recarregar e confirmar persistência', 'Mostrar Context, useReducer e useEffect', 'npm run build'] },
   { kicker: '14 · CONCLUSÃO', title: 'React é uma escolha, não um padrão automático', statement: 'Recomendamos para interfaces interativas e evolutivas; não para toda página Web.', bullets: ['Componentes reduzem repetição', 'Estado torna mudanças previsíveis', 'Vite simplifica o projeto client-side', 'Framework React pode ser melhor no full stack', 'Domínio técnico inclui segurança e manutenção'], source: 'react.dev · vite.dev · docs.github.com' },
 ];

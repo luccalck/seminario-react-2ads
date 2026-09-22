@@ -2,37 +2,37 @@
 
 Tempo estimado: 16 a 18 minutos. A demonstração deve ser ensaiada com a mesma máquina usada na apresentação.
 
-## Lucca Castilho — slides 1 e 2
+## João Gabriel — slides 1 a 3
 
-Apresente o tema e a classificação correta: React é uma biblioteca de interface, não um framework full stack. Explique que componentes descrevem a tela a partir do estado.
+Faça a abertura, apresente os integrantes e defina React como uma biblioteca para interfaces, não como um framework full stack. Explique que componentes descrevem a tela a partir do estado e percorra os principais marcos de 2013 até a React Foundation.
 
-## João Gabriel — slides 3 e 4
+## Lucca Castilho — slides 4 e 5
 
-Explique que Jordan Walke criou React no Facebook, que o projeto foi aberto em 2013 e que hoje pertence à React Foundation, com manutenção da fundação e da comunidade. Percorra Fiber, Hooks, React 18, React 19 e a versão 19.3. Depois compare React com HTML/CSS em páginas simples e com frameworks React em aplicações full stack.
+Explique quando React faz sentido e quando HTML e CSS ou um framework full stack são alternativas melhores. Em seguida, apresente o fluxo interação, evento, estado, reconciliação e DOM.
 
-## João Pedro Fonseca — slides 5 e 6
+## Miguel Oliveira — slides 6 e 7
 
-Explique o fluxo interação, evento, estado, reconciliação e DOM. Relacione os pré-requisitos a esse fluxo, destacando JavaScript moderno e HTML semântico.
+Apresente os pré-requisitos, com destaque para HTML semântico, CSS responsivo, JavaScript moderno, Node.js e npm. Mostre os comandos para criar e executar o projeto com Vite.
 
-## Lucas Souza — slides 7 e 8
+## Lucas Souza — slides 8 e 9
 
-Execute ou explique os comandos do Vite. Mostre `main.tsx`, `App.tsx`, `pages`, `components`, `context` e a responsabilidade de cada parte.
+Mostre `main.tsx`, `App.tsx`, `pages`, `components`, `context` e a responsabilidade de cada parte. Depois apresente o trecho com `useReducer` e `useEffect`, explicando estado compartilhado e persistência.
 
-## Miguel Oliveira — slides 9 e 10
+## Davi Souza — slides 10 e 11
 
-Mostre o trecho com `useReducer` e `useEffect`. Explique que o reducer calcula o próximo estado sem mutação e que o effect sincroniza o estado com `localStorage`. Compare forças e limitações sem afirmar que React resolve arquitetura, desempenho ou backend sozinho.
+Compare forças e limitações sem afirmar que React resolve arquitetura, desempenho ou backend sozinho. Apresente a React Foundation e seus oito membros fundadores como evidência de um ecossistema mantido por várias empresas.
 
-## Davi Souza — slides 11 e 12
+## João Pedro Fonseca — slides 12 e 13
 
-Apresente a adoção e a vulnerabilidade CVE-2025-55182. Cite as versões afetadas, o risco de execução remota e as correções iniciais, recomendando a última versão suportada. Deixe claro que o escopo é React Server Components e que a aplicação Vite somente cliente não é afetada diretamente.
+Apresente a vulnerabilidade CVE-2025-55182, as versões afetadas e a atualização recomendada. Deixe claro que o projeto Vite somente cliente não usa React Server Components. Depois apresente as rotas e os recursos do ReactLab.
 
-## Pedro de Lima — slides 13 e 14
+## Renan Ramos — slide 14
 
-Apresente o ReactLab, suas quatro rotas e o fluxo do quadro de tarefas. Na demonstração, crie uma tarefa, conclua e filtre.
+Faça a demonstração prática. No terminal, execute `npm ci` e `npm run dev`. Abra a aplicação no navegador, crie uma tarefa, conclua, filtre, remova e recarregue a página para confirmar a persistência. Mostre no código pelo menos `TaskContext.tsx` e `TaskBoard.tsx`, identificando componentes, Context, `useReducer` e `useEffect`. Finalize com `npm run build`.
 
-## Renan Ramos — slide 15
+## Pedro de Lima — slide 15
 
-Feche com a recomendação técnica e indique as fontes oficiais. Se houver tempo, retome o resultado do build e a persistência demonstrada no slide anterior.
+Feche com a recomendação técnica, retome os resultados da demonstração e indique as fontes oficiais.
 
 ## Plano de contingência
 
