@@ -22,6 +22,21 @@ Investigar React, comparar seus cenários de uso e demonstrar na prática compon
 - Pedro de Lima
 - Renan Ramos
 
+## Divisão da apresentação
+
+A numeração abaixo é a exibida no canto dos slides, incluindo a capa como slide 1.
+
+| Integrante | Slides | Conteúdo |
+| --- | --- | --- |
+| João Gabriel | 1–3 | Abertura, definição e evolução |
+| João Pedro Fonseca | 4–5 | Cenários de uso e arquitetura |
+| Miguel Oliveira | 6–7 | Pré-requisitos e instalação |
+| Lucas Souza | 8–9 | Estrutura e recursos React |
+| Davi Souza | 10–11 | Vantagens, limitações e ecossistema |
+| Renan Ramos | 12 | Segurança |
+| Lucca Castilho | 13–14 | Aplicação desenvolvida e demonstração |
+| Pedro de Lima | 15 | Conclusão |
+
 ## Tecnologia e versões
 
 - React e React DOM 19.3.0

@@ -7,12 +7,12 @@ export const members = [
 
 export const speakerAssignments = [
   { member: 'João Gabriel', slides: '01–03' },
-  { member: 'Lucca Castilho', slides: '04–05' },
+  { member: 'João Pedro Fonseca', slides: '04–05' },
   { member: 'Miguel Oliveira', slides: '06–07' },
   { member: 'Lucas Souza', slides: '08–09' },
   { member: 'Davi Souza', slides: '10–11' },
-  { member: 'João Pedro Fonseca', slides: '12–13' },
-  { member: 'Renan Ramos', slides: '14' },
+  { member: 'Renan Ramos', slides: '12' },
+  { member: 'Lucca Castilho', slides: '13–14' },
   { member: 'Pedro de Lima', slides: '15' },
 ] as const;
 
