@@ -3,12 +3,15 @@ import { ReactOrbit } from '../components/ReactOrbit';
 import { SectionHeading } from '../components/SectionHeading';
 import { slides, speakerAssignments } from '../data/presentation';
 
+// Página inicial: reúne os principais conteúdos do seminário e leva à demo.
 export function HomePage() {
   return <>
+    {/* Abertura e links internos para apresentação e aplicação prática. */}
     <section className="hero">
       <div className="hero-copy"><span className="eyebrow">SEMINÁRIO · FRAMEWORKS FRONT-END</span><h1>React transforma <em>estado</em> em interface.</h1><p>Pesquisa, comparação e demonstração prática em uma aplicação Web criada pela turma 2º ADS.</p><div className="actions"><Link className="primary" to="/slides">Abrir apresentação</Link><Link className="secondary" to="/demo">Testar aplicação</Link></div></div>
       <ReactOrbit />
     </section>
+    {/* Os blocos seguintes resumem definição, funcionamento e cenários de uso. */}
     <section className="section light">
       <SectionHeading eyebrow="EM UMA FRASE" title="Uma biblioteca para interfaces componentizadas" text="React organiza a camada de apresentação com componentes, props, estado e renderização declarativa." />
       <div className="metric-row"><article><strong>2013</strong><span>lançamento público</span></article><article><strong>19.3</strong><span>versão usada</span></article><article><strong>15</strong><span>tópicos pesquisados</span></article><article><strong>8</strong><span>integrantes</span></article></div>
@@ -46,6 +49,7 @@ export function HomePage() {
       <div className="route-map"><span>#/</span><span>#/slides</span><span>#/demo</span><span>#/referencias</span></div>
       <div className="demo-path"><b>DEMO</b><span>npm run dev</span><i>→</i><span>criar tarefa</span><i>→</i><span>filtrar</span><i>→</i><span>recarregar</span><i>→</i><span>npm run build</span></div>
     </section>
+    {/* Gera o índice de tópicos e a divisão da apresentação a partir dos dados únicos. */}
     <section className="section light">
       <SectionHeading eyebrow="ROTEIRO COMPLETO" title="15 tópicos, sem ultrapassar o limite" />
       <ol className="topic-grid">{slides.map((slide, index) => <li key={slide.title}><span>{String(index + 1).padStart(2, '0')}</span><strong>{slide.title}</strong></li>)}</ol>

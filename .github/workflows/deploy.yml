@@ -1,10 +1,12 @@
 name: Publicar no GitHub Pages
 
+# Publica novamente quando main muda; também permite disparo manual no GitHub.
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
+# Concede apenas as permissões necessárias para ler o código e publicar Pages.
 permissions:
   contents: read
   pages: write
@@ -15,6 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Instala dependências travadas, executa testes e gera os arquivos estáticos.
   build:
     runs-on: ubuntu-latest
     steps:
@@ -30,6 +33,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
+  # Só publica o resultado de dist depois que o job build termina com sucesso.
   deploy:
     environment:
       name: github-pages
