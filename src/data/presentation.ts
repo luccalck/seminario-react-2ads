@@ -1,12 +1,10 @@
 import type { Slide } from '../types';
 
-// Integrantes exibidos na capa e no rodapé; a ordem aqui é a ordem de exibição.
 export const members = [
   'Lucca Castilho', 'João Gabriel', 'Miguel Oliveira', 'Lucas Souza',
   'Davi Souza', 'João Pedro Fonseca', 'Renan Ramos', 'Pedro de Lima',
 ];
 
-// Responsáveis por cada faixa de slides, usados na página inicial.
 export const speakerAssignments = [
   { member: 'João Gabriel', slides: '01–03' },
   { member: 'João Pedro Fonseca', slides: '04–05' },
@@ -18,7 +16,6 @@ export const speakerAssignments = [
   { member: 'Pedro de Lima', slides: '15' },
 ] as const;
 
-// Fontes oficiais mostradas na página de referências.
 export const references = [
   ['React — Quick Start', 'https://react.dev/learn'],
   ['React — Versions', 'https://react.dev/versions'],
@@ -33,8 +30,6 @@ export const references = [
   ['React Router — HashRouter', 'https://reactrouter.com/api/declarative-routers/HashRouter'],
 ] as const;
 
-// Dados dos 15 slides HTML. Cada objeto informa título, resumo, tópicos e,
-// quando aplicável, trecho de código e indicação de fonte.
 export const slides: Slide[] = [
   { kicker: 'FRAMEWORKS FRONT-END · 2º ADS', title: 'React', statement: 'Interfaces Web baseadas em componentes.', bullets: ['Pesquisa técnica', 'Aplicação funcional', 'Demonstração ao vivo'] },
   { kicker: '01 · DEFINIÇÃO', title: 'Uma biblioteca para construir interfaces', statement: 'React descreve a interface como função do estado.', bullets: ['JavaScript de código aberto', 'Componentes reutilizáveis', 'Camada de apresentação', 'Renderização declarativa'], source: 'react.dev/learn' },

@@ -5,13 +5,11 @@ import { SlidesPage } from './pages/SlidesPage';
 import { DemoPage } from './pages/DemoPage';
 import { ReferencesPage } from './pages/ReferencesPage';
 
-// Layout comum a todas as páginas: menu, conteúdo da rota atual e rodapé.
 export function App() {
   return (
     <div className="site-shell">
       <header className="topbar">
         <NavLink className="brand" to="/"><span className="brand-mark">⚛</span> ReactLab</NavLink>
-        {/* NavLink marca automaticamente o link correspondente à rota ativa. */}
         <nav aria-label="Navegação principal">
           <NavLink to="/">Visão geral</NavLink>
           <NavLink to="/slides">Slides HTML</NavLink>
@@ -19,7 +17,6 @@ export function App() {
           <NavLink to="/referencias">Referências</NavLink>
         </nav>
       </header>
-      {/* O Router troca a página exibida sem recarregar o documento inteiro. */}
       <main><Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/slides" element={<SlidesPage />} />
